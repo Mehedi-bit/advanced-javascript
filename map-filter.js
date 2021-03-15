@@ -16,6 +16,12 @@ const output = [];
 //     return element*element;
 // })
 
-const result = numbers.map(x => x*x)
-
+const result = numbers.map(x => x*x)     //map() returns array
 console.log(result);
+
+
+const bigger = numbers.filter(x => x > 5);   //filter() returns array
+console.log(bigger);
+
+const isThere = numbers.find(x => x > 5); //find() just returns first item
+console.log(isThere);
