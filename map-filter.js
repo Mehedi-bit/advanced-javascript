@@ -20,8 +20,8 @@ const result = numbers.map(x => x*x)     //map() returns array
 console.log(result);
 
 
-const bigger = numbers.filter(x => x > 5);   //filter() returns array
+const bigger = numbers.filter(x => x > 5);   //filter() returns array or all matching elements
 console.log(bigger);
 
-const isThere = numbers.find(x => x > 5); //find() just returns first item
+const isThere = numbers.find(x => x > 5); //find() returns only the first matching element
 console.log(isThere);
