@@ -17,7 +17,7 @@ console.log(removed2);
 console.log(nums2);
 
 
-// .....................join()...................
+// .....................join()................... ***Obviously join() returns in "String"
 const nums3 = [1, 2, 77, 8, 9, 10];
 let together = nums3.join("");
 console.log(together);
