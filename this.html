@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is not confused anymore</h1>
+    <script>
+        const myObj = {
+            name: 'khaja baba',
+            getFullName: function(){
+                console.log(this);
+                return 'Mr. ' + this.name;
+            }
+        }
+        // myObj.getFullName();
+        const anotherObj = {
+            name: 'Aula baba'
+        }
+        // anotherObj.getFullName = myObj.getFullName;
+        // console.log(anotherObj.getFullName);
+
+        // myObj.getFullName();
+        // anotherObj.getFullName();
+
+        function add(a,b){
+            console.log(this);            //<--this 'this' will refer window object.
+            return a + b;
+        }
+        add(12, 13);
+        anotherObj.sum = add;
+        anotherObj.sum();
+
+
+        setTimeout(function(){
+            console.log(this);              //<--this 'this' will refer window object.
+        }, 1000)
+    </script>
+</body>
+</html>
